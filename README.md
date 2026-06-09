@@ -21,7 +21,7 @@ The target variable throughout this analysis is wOBA (weighted on-base average),
 ├── requirements.txt                  # Python dependencies
 ├── data/
 │   └── raw/
-│       └── mlb_hitter_savant_2025_raw.csv
+│       └── stats.csv
 └── README.md
 ```
 
@@ -56,7 +56,7 @@ Traditional stats: batting average, OBP, SLG, OPS, home runs, strikeout %, walk 
 
 Statcast/contact-quality stats: xBA, xSLG, xwOBA, average exit velocity, launch angle, barrel %, hard-hit %
 
-To reproduce this project, download the custom leaderboard CSV from Baseball Savant with the columns used in the notebook and place it at `data/raw/mlb_hitter_savant_2025_raw.csv`, or update `csv_path` in the Setup section to point to your file.
+The dataset is included in this repository at data/raw/stats.csv and loaded directly from GitHub when the notebook runs.
 
 ---
 
@@ -77,7 +77,7 @@ Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/cgiuffrida28/mlb-hitter-value-statcast.git
-cd baseball-statcast
+cd mlb-hitter-value-statcast
 pip install -r requirements.txt
 ```
 
@@ -87,7 +87,7 @@ Then open the notebook:
 jupyter notebook mlb-hitter-value-statcast.ipynb
 ```
 
-> **Note:** This notebook was developed in Google Colab. The Setup section includes a Google Drive mount — if running locally, replace the `csv_path` with your local file path and remove the Drive mount cell.
+The notebook loads the dataset directly from this repository, so no additional data setup is required.
 
 ---
 
