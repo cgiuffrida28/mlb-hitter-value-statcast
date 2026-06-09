@@ -76,7 +76,7 @@ To reproduce this project, download the custom leaderboard CSV from Baseball Sav
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/baseball-statcast.git
+git clone https://github.com/cgiuffrida28/mlb-hitter-value-statcast.git
 cd baseball-statcast
 pip install -r requirements.txt
 ```
@@ -84,7 +84,7 @@ pip install -r requirements.txt
 Then open the notebook:
 
 ```bash
-jupyter notebook Baseball_Statcast.ipynb
+jupyter notebook mlb-hitter-value-statcast.ipynb
 ```
 
 > **Note:** This notebook was developed in Google Colab. The Setup section includes a Google Drive mount — if running locally, replace the `csv_path` with your local file path and remove the Drive mount cell.
