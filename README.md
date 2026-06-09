@@ -8,17 +8,17 @@ A data science portfolio project analyzing 2025 MLB hitter performance using Bas
 
 ## Overview
 
-Baseball has been statistically rich for over a century, but the introduction of Statcast in 2015 added a new layer of metrics that measure *how well* a ball was hit, not just the outcome. This project investigates whether those newer metrics — exit velocity, launch angle, barrel rate, and others — outperform traditional stats like OPS, batting average, and OBP when it comes to explaining a hitter's offensive value.
+Baseball has been statistically rich for over a century, but the introduction of Statcast in 2015 added a new layer of metrics that measure how well a ball was hit, not just the outcome. This project investigates whether those newer metrics — exit velocity, launch angle, barrel rate, and others — outperform traditional stats like OPS, batting average, and OBP when it comes to explaining a hitter's offensive value.
 
-The target variable throughout this analysis is **wOBA** (weighted on-base average), a well-established measure of overall offensive production.
+The target variable throughout this analysis is wOBA (weighted on-base average), a well-established measure of overall offensive production.
 
 ---
 
 ## Project Structure
 
 ```
-├── Baseball_Statcast.ipynb   # Main analysis notebook
-├── requirements.txt          # Python dependencies
+├── mlb-hitter-value-statcast.ipynb   # Main analysis notebook
+├── requirements.txt                  # Python dependencies
 ├── data/
 │   └── raw/
 │       └── mlb_hitter_savant_2025_raw.csv
@@ -52,9 +52,9 @@ Data was sourced from **[Baseball Savant](https://baseballsavant.mlb.com/leaderb
 
 **Feature categories used:**
 
-*Traditional stats:* batting average, OBP, SLG, OPS, home runs, strikeout %, walk %
+Traditional stats: batting average, OBP, SLG, OPS, home runs, strikeout %, walk %
 
-*Statcast/contact-quality stats:* xBA, xSLG, xwOBA, average exit velocity, launch angle, barrel %, hard-hit %
+Statcast/contact-quality stats: xBA, xSLG, xwOBA, average exit velocity, launch angle, barrel %, hard-hit %
 
 To reproduce this project, download the custom leaderboard CSV from Baseball Savant with the columns used in the notebook and place it at `data/raw/mlb_hitter_savant_2025_raw.csv`, or update `csv_path` in the Setup section to point to your file.
 
